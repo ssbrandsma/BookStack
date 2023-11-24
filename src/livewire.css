@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Assuming your Livewire table has a class 'livewire-table' */
+.livewire-table {
+    font-size: 11px; /* Set your desired font size */
+}
+
+.livewire-table tbody tr {
+    height: 10px;
+}

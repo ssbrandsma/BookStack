@@ -89,3 +89,5 @@ Route::delete('recycle-bin/{deletionId}', [EntityControllers\RecycleBinApiContro
 
 Route::get('content-permissions/{contentType}/{contentId}', [ContentPermissionApiController::class, 'read']);
 Route::put('content-permissions/{contentType}/{contentId}', [ContentPermissionApiController::class, 'update']);
+
+Route::resource('vehicles', VehicleController::class);

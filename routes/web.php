@@ -6,6 +6,7 @@ use BookStack\Api\ApiDocsController;
 use BookStack\Api\UserApiTokenController;
 use BookStack\App\HomeController;
 use BookStack\Entities\Controllers as EntityControllers;
+use BookStack\Http\Controllers\VehicleController;
 use BookStack\Http\Middleware\VerifyCsrfToken;
 use BookStack\Permissions\PermissionsController;
 use BookStack\References\ReferenceController;
@@ -17,10 +18,13 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Route;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
+
 Route::get('/status', [SettingControllers\StatusController::class, 'show']);
 Route::get('/robots.txt', [HomeController::class, 'robots']);
 Route::get('/favicon.ico', [HomeController::class, 'favicon']);
 Route::get('/manifest.json', [HomeController::class, 'pwaManifest']);
+
+Route::resource('vehicles', VehicleController::class);
 
 // Authenticated routes...
 Route::middleware('auth')->group(function () {

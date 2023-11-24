@@ -8,7 +8,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^8.0.2",
+        "php": "~8.2",
         "ext-curl": "*",
         "ext-dom": "*",
         "ext-fileinfo": "*",
@@ -33,6 +33,7 @@
         "phpseclib/phpseclib": "^3.0",
         "pragmarx/google2fa": "^8.0",
         "predis/predis": "^2.1",
+        "ramonrietdijk/livewire-tables": "^2.1",
         "socialiteproviders/discord": "^4.1",
         "socialiteproviders/gitlab": "^4.1",
         "socialiteproviders/microsoft-azure": "^5.1",
@@ -99,7 +100,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "8.0.2"
+            "php": "8.2"
         }
     },
     "extra": {
