@@ -4,7 +4,7 @@
 
 /* Assuming your Livewire table has a class 'livewire-table' */
 .livewire-table {
-    font-size: 11px; /* Set your desired font size */
+    font-size: 10px; /* Set your desired font size */
 }
 
 .livewire-table tbody tr {
