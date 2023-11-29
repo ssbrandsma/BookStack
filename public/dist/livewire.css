@@ -996,7 +996,7 @@ video {
 /* Assuming your Livewire table has a class 'livewire-table' */
 
 .livewire-table {
-  font-size: 10px;
+  font-size: 12px;
   /* Set your desired font size */
 }
 

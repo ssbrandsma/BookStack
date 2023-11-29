@@ -5,8 +5,12 @@ module.exports = {
     "./vendor/ramonrietdijk/livewire-tables/resources/**/*.blade.php"
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {},
   },
+
   plugins: [],
 }
 

@@ -43,7 +43,7 @@
             </div>
 
             {{-- Desktop --}}
-            <div class="hidden lg:flex-1 lg:flex lg:items-center lg:justify-between">
+            <div class="lg:flex-1 lg:flex lg:items-center lg:justify-between">
                 <p class="text-sm text-neutral-800 dark:text-neutral-400">
                     <span>{!! __('Showing') !!}</span>
                     <span class="font-bold">{{ $paginator->firstItem() }}</span>
@@ -62,7 +62,7 @@
                                 <span aria-disabled="true" aria-label="@lang('pagination.previous')">
                                     <span
                                         class="relative inline-flex items-center px-2 py-2 text-sm text-neutral-500 bg-white border border-neutral-200 rounded-l-md dark:bg-neutral-800 dark:border-neutral-700"
-                                        aria-hidden="true">
+                                        aria-hidden="false">
                                         <!-- Icon "chevron-left" (outline) from https://heroicons.com -->
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -135,7 +135,7 @@
                                 <span aria-disabled="true" aria-label="@lang('pagination.next')">
                                     <span
                                         class="relative inline-flex items-center px-2 py-2 -ml-px text-sm text-neutral-500 bg-white border border-neutral-200 rounded-r-md dark:bg-neutral-800 dark:border-neutral-700"
-                                        aria-hidden="true">
+                                        aria-hidden="false">
                                         <!-- Icon "chevron-right" (outline) from https://heroicons.com -->
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
