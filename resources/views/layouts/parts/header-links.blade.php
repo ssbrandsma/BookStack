@@ -3,6 +3,10 @@
 @if (user()->hasAppAccess())
     <a class="hide-over-l" href="{{ url('/search') }}">@icon('search'){{ trans('common.search') }}</a>
     @if(userCanOnAny('view', \BookStack\Entities\Models\Bookshelf::class) || userCan('bookshelf-view-all') || userCan('bookshelf-view-own'))
+        <a href="{{ url('/vehicles') }}"
+           data-shortcut="vehicles_view">@icon('database')VIN database</a>
+    @endif
+    @if(userCanOnAny('view', \BookStack\Entities\Models\Bookshelf::class) || userCan('bookshelf-view-all') || userCan('bookshelf-view-own'))
         <a href="{{ url('/shelves') }}"
            data-shortcut="shelves_view">@icon('bookshelf'){{ trans('entities.shelves') }}</a>
     @endif
