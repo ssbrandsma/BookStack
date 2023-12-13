@@ -153,6 +153,7 @@ return [
         \BookStack\App\Providers\TranslationServiceProvider::class,
         \BookStack\App\Providers\ValidationRuleServiceProvider::class,
         \BookStack\App\Providers\ViewTweaksServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     // Class Aliases
@@ -167,6 +168,8 @@ return [
         // Custom BookStack
         'Activity'    => BookStack\Facades\Activity::class,
         'Theme'       => BookStack\Facades\Theme::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ])->toArray(),
 
     // Proxy configuration
