@@ -5,25 +5,9 @@
 @livewireScripts
 
 @extends('layouts.base')
-
 @section('content')
 
-<div class="flex flex-row">
-    <div class="basis-1/4"> <!-- Grid cell -->
-       A
-    </div>
-    <div class="basis-1/4"> <!-- Grid cell -->
-       B
-    </div>
-    <div class="basis-1/4">
-       C
-    </div>
-    <div class="basis-1/4">
-       D
-    </div>
-</div>
-
-<div className="flex flex-wrap w-full">
+<div className="flex flex-wrap w-full border border-4 border-black">
     <h1>Create new Vehicle</h1>
 
     <!-- Form to create a new vehicle -->

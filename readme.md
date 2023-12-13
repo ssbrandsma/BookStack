@@ -1,3 +1,6 @@
+# tips
+npx tailwindcss -i ./src/livewire.css -o .\public\dist\livewire.css
+
 # BookStack
 
 [![GitHub release](https://img.shields.io/github/release/BookStackApp/BookStack.svg)](https://github.com/BookStackApp/BookStack/releases/latest)
