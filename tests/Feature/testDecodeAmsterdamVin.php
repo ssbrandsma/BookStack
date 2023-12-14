@@ -2,9 +2,9 @@
 
 namespace Tests\Feature;
 
-use App\CustomClasses\DataPlate;
-use App\CustomClasses\DecoderFactory;
-use App\CustomClasses\DecoderInternational;
+use BookStack\CustomClasses\DataPlate;
+use BookStack\CustomClasses\DecoderFactory;
+use BookStack\CustomClasses\DecoderInternational;
 use Tests\TestCase;
 
 use function PHPUnit\Framework\assertEquals;

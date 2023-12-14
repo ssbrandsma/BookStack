@@ -2,7 +2,7 @@
 
 namespace BookStack\CustomClasses;
 
-use App\CustomClasses\DataPlate;
+use BookStack\CustomClasses\DataPlate;
 
 /**
  * 

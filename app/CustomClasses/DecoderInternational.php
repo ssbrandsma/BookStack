@@ -161,6 +161,13 @@ class DecoderInternational extends AbstractDecoder
     ];
     
         
+    public function getModelYear():string
+    {
+        $yearCode = $this->dataPlate->vin[4];
+        $year = $this->yearLookup[$yearCode];
+
+        return  $year;
+    }
 
     public function getDate(): string
     {
