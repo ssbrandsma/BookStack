@@ -1,11 +1,14 @@
-<div class="content-center">
-    <div class="flex flex-row content-center">
-        <div class="basis-1/4"> <!-- Grid cell -->
-            {{ Form::label('vin', 'VIN', ['class' => 'text-gray-500 font-bold']) }}
-        </div>
-        <div class="basis-3/4"> <!-- Grid cell -->
-            {{ Form::text('vin', null, ['class' => 'appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-800', 'placeholder' => 'Enter VIN']) }}
-        </div>    
+<div class="content-center border border-black">
+
+<div class="flex flex-row border border-black">
+  <div class="basis-1/4">01</div>
+  <div class="basis-1/4">02</div>
+  <div class="basis-1/2">03</div>
+</div>
+
+    <div class="grid grid-cols-2 gap-4">
+        <div>{{ Form::label('vin', 'VIN', ['class' => 'text-gray-500 font-bold']) }}</div>
+        <div>{{ Form::text('vin', null, ['class' => 'appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-800', 'placeholder' => 'Enter VIN']) }}</div>
     </div>
 </div>
 
